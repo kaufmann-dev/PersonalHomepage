@@ -1,147 +1,116 @@
-* {
-    font-family: 'Nunito Sans', sans-serif;
-    line-height: 1.5;
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('fonts/inter_variable.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
-html.main {
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('fonts/inter_variable.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('fonts/inter_variable.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('fonts/inter_variable.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    src: url('fonts/material_icons_outlined.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.material-symbols-outlined {
+    font-size: inherit;
+    font-family: 'Material Symbols Outlined';
+}
+
+body, html {
     height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
 }
-body {
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+/*@media (min-width: 1024px) {
+    nav a:hover {
+        background-color: #f5f5f5;
+    }
+}*/
+
+.current {
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.containerchild {
+    max-width: 1024px;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
     margin: 0;
 }
-body.main {
-    height: 100%;
-    overflow: hidden;
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
 }
-.textbody {
-    background: #000;
-}
-.textbody div.textbodyChild {
-    max-width: 700px;
-    padding: 16px 20px 32px 20px;
-    color: #fff;
-    margin: 0 auto;
-}
-.textbody div.textbodyChild h1 {
-    margin: 16px 0;
-}
-h1 {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 800;
-    margin: 0 0 0px 0;
-    color: #fff;
-}
+
 p {
-    margin-top: 0;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
 }
-p.dandd {
-    color: #fff;
-    font-weight: 200;
-    font-family: 'Lexend', sans-serif;
-}
-footer {
-    padding: 5px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 8.9pt;
-    color: #fff;
-}
-footer.notmain {
-    background: #000;
-}
-footer a {
-    color: #fff;
-}
-footer a {
-    text-decoration: none;
-}
-.qr {
-    transition: opacity 250ms;
-    opacity: 0;
-    z-index: 50;
-}
-.qr:hover {
-    opacity: 1;
-}
-button {
-    border-radius: 3px;
-    background: #fff;
+
+a {
     color: #000;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 4px 8px;
-    margin-bottom: 3px;
-}
-.spinner {
-	animation:spin 16s linear infinite;
-}
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 20pt;
-    }
-    p.dandd {
-        font-size: 19.9pt;
-    }
-    button {
-        font-size: 9.1pt;
-    }
-    .adaptiveflex {
-        flex-direction: column;
-    }
-    footer {
-        text-align: center;
-    }
-    p {
-        margin-bottom: 9.65px;
-    }
-}
-@media screen and (min-width: 767px) and (max-width: 1500px) {
-    .adaptiveflex {
-        flex-direction: row;
-    }
-    h1 {
-        font-size: 20pt;
-    }
-    p.dandd {
-        font-size: 19.9pt;
-    }
-    button {
-        font-size: 9.1pt;
-    }
-    footer {
-        text-align: end;
-    }
-    p {
-        margin-bottom: 9.65px;
-    }
-}
-@media screen and (min-width: 1500px) {
-    h1 {
-        font-size: 39.1pt;
-    }
-    p.dandd {
-        font-size: 39pt;
-    }
-    button {
-        font-size: 19.2pt;
-    }
-    footer {
-        text-align: end;
-    }
-    p {
-        margin-bottom: 22.4px;
-    }
-}
-.adaptiveflex {
-    display: flex;
-    height: 100%;
-}
-@keyframes spin {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
+    text-decoration: none;
 }
