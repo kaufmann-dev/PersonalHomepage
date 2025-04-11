@@ -1,3 +1,4 @@
+/* FONT FAMILIES */
 @font-face {
     font-family: 'Inter';
     src: local('Inter'), url('fonts/inter_variable.ttf') format('truetype');
@@ -43,6 +44,7 @@
     font-family: 'Material Symbols Outlined';
 }
 
+/* GENERAL */
 body, html {
     height: 100%;
     margin: 0;
@@ -69,12 +71,6 @@ nav a {
     padding: 20px 0;
 }
 
-/*@media (min-width: 1024px) {
-    nav a:hover {
-        background-color: #f5f5f5;
-    }
-}*/
-
 .current {
     font-weight: 700;
 }
@@ -89,7 +85,7 @@ nav a {
 }
 
 .containerchild {
-    max-width: 1024px;
+    max-width: 984px;
 }
 
 .box {
@@ -118,4 +114,55 @@ p {
 a {
     color: #000;
     text-decoration: none;
+}
+
+/* IMAGE GRID */
+.widthCalculated {
+    width: calc(100vw - 40px);
+}
+
+.imgdetail p {
+    font-size: 11px;
+    margin: 10px 0 0 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#imgcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* MOBILE */
+    gap: 20px;
+}
+
+@media (min-width: 640px) {
+    #imgcontainer {
+        grid-template-columns: repeat(3, 1fr); /* SMALL TABLETS */
+    }
+}
+
+@media (min-width: 1024px) {
+    #imgcontainer {
+        grid-template-columns: repeat(4, 1fr); /* DESKTOP */
+    }
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imgdetail {
+    display: grid;
+    grid-template-rows: 1fr auto auto auto;
+    text-align: center;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #eee;
 }
