@@ -25,7 +25,6 @@
         </div>
     </div>
     <script>
-        console.log("hi");
         fetch('images.json')
             .then(response => response.json())
             .then(data => {
@@ -36,10 +35,15 @@
 
                     const imgDiv = document.createElement('div');
                     imgDiv.classList.add('img');
+
                     const img = document.createElement('img');
                     img.alt = item.title;
                     img.src = item.imageSrc;
                     img.style.aspectRatio = item.aspectRatio;
+                    img.onclick = () => {
+                        window.location.href = item.fullImageLink;
+                    };
+
                     imgDiv.appendChild(img);
 
                     const p = document.createElement('p');
