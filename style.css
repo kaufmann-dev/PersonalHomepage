@@ -147,7 +147,7 @@ a {
     }
 }
 
-.img img {
+.img img { /* BEST WIDTH: 570 (iPhone) - 615 (Samsung) */
     width: 100%;
     height: auto;
     display: block;
