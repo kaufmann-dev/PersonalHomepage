@@ -41,7 +41,7 @@
 
 .material-symbols-outlined {
     font-size: inherit;
-    font-family: 'Material Symbols Outlined';
+    font-family: 'Material Symbols Outlined', sans-serif;
 }
 
 /* GENERAL */
@@ -63,9 +63,9 @@ nav {
 }
 
 nav a {
-    flex: 1;
+    flex: auto;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     color: #000;
     text-decoration: none;
     padding: 20px 0;
@@ -100,13 +100,13 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
 }
 
 p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     margin: 5px 0 0 0;
 }
