@@ -18,6 +18,14 @@
 }
 
 /** Symbols */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    src: url('fonts/material_icons_outlined.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .material-symbols-outlined {
     font-size: inherit;
     font-family: 'Material Symbols Outlined', sans-serif;
