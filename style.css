@@ -47,7 +47,7 @@ nav {
     align-items: center;
     width: 100%;
     background-color: transparent;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #000;
 }
 
 nav a {
@@ -60,11 +60,12 @@ nav a {
 }
 
 nav a:not(:last-child) {
-    border-right: 1px solid #eee;
+    border-right: 1px solid #000;
 }
 
 .current {
-    font-weight: 700;
+    background-color: #000;
+    color: #fff;
 }
 
 .container {
