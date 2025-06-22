@@ -73,7 +73,7 @@ nav a {
 .current {
     background: radial-gradient(circle, #333, #000);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .container {
@@ -222,7 +222,7 @@ button {
     font-size: 15px;
     background-color: #000;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 0 10px;
     outline: none;
     border: none;
     transition: background-color 0.3s ease; 
@@ -260,5 +260,5 @@ button:hover {
 
 .project {
     background: linear-gradient(90deg, #fff 0%, #fff 50%, #eee 100%);
-    border-radius: 2px;
+    border-radius: 10px;
 }
