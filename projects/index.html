@@ -5,7 +5,6 @@
     <meta name="description" content="Welcome to my homepage. I am a Vienna-based professional with a background in information technology.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Text and Textbox</title>
     <link rel="icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="/style.css">
@@ -22,6 +21,20 @@
             <h1>PROJECTS</h1>
             <div class="box project">
                 <div class="flex-container">
+                    <h2>3D Printing My Skull</h2>
+                    <a href="/projects/skull">
+                        <button>View <span class="material-symbols-outlined">link</span></button>
+                    </a>
+                </div>
+                <h3>From CT to Tangible Anatomy</h3>
+                <ul>
+                    <li>Segmented personal CT scan data to isolate craniofacial bone structures and the first three cervical vertebrae.</li>
+                    <li>Converted the segmented data into a printable 3D mesh and processed it for accuracy and printability.</li>
+                    <li>Fabricated a tangible model of my own skull using stereolithography 3D printing technology.</li>
+                </ul>
+            </div>
+            <div class="box project">
+                <div class="flex-container">
                     <h2>Bash Scripts</h2>
                     <a href="https://github.com/kaufmann-dev/BashScripts">
                         <button>GitHub <span class="material-symbols-outlined">link</span></button>
@@ -29,7 +42,8 @@
                 </div>
                 <h3>Git repository manipulation</h3>
                 <ul>
-                    <li>A collection of Bash scripts designed to manage and manipulate Git repositories.</li>
+                    <li>Collection of Bash scripts designed to manage and manipulate Git repositories.</li>
+                    <li>Includes tools for bulk cloning, pushing, licensing, auditing, and rewriting Git history across multiple repositories.</li>
                     <li class="tech-list">Technologies: <span>Bash</span>, <span>Git</span>, <span>GitHub CLI</span>, <span>git-filter-repo</span></li>
                 </ul>
             </div>
@@ -42,7 +56,7 @@
                 </div>
                 <h3>Event calendar and education catalog</h3>
                 <ul>
-                    <li>A Laravel application with a Svelte web frontend, offering an event calendar and an overview of educational offerings for young people in Krems and the surrounding area.</li>
+                    <li>Laravel application with a Svelte web frontend, offering an event calendar and an overview of educational offerings for young people in Krems and the surrounding area.</li>
                     <li>Practical part of my diploma thesis at HTL Krems commissioned by and in cooperation with the city of Krems.</li>
                     <li>Technologies: <span>MySQL 8</span>, <span>Laravel 9</span>, <span>Svelte 3</span>, <span>Eloquent</span>, <span>Inertia</span>, <span>REST</span>, <span>Laravel Sanctum</span>, <span>Tailwind</span></li>
                 </ul>
@@ -56,7 +70,8 @@
                 </div>
                 <h3>Asynchronous programming</h3>
                 <ul>
-                    <li>A .NET application with a Blazor web frontend, following the MVC design pattern, that manages a MySQL film database via asynchronous REST API calls.</li>
+                    <li>Full-stack .NET application with a REST API for managing a MySQL film database, built on the MVC pattern.</li>
+                    <li>Implemented asynchronous CRUD operations with Swagger documentation and a Blazor UI.</li>
                     <li class="tech-list">Technologies: <span>.NET 7</span>, <span>C# 11</span>, <span>MySQL 8</span>, <span>Blazor</span>, <span>Entity Framework</span>, <span>Swagger</span></li>
                 </ul>
             </div>
@@ -64,13 +79,14 @@
                 <div class="flex-container">
                     <h2>Purus CSS</h2>
                     <a href="https://puruscss.kaufmann.dev">
-                        <button>Website <span class="material-symbols-outlined">link</span></button>
+                        <button>View <span class="material-symbols-outlined">link</span></button>
                     </a>
                 </div>
                 <h3>Minimalist CSS framework</h3>
                 <ul>
-                    <li>A minimalist and customizable CSS drop-in framework with some useful utility classes.</li>
-                    <li>Technologies: CSS</li>
+                    <li>Minimalist CSS drop-in framework with no JavaScript dependencies.</li>
+                    <li>Focus on responsiveness, mobile-friendliness, and full customizability via CSS variables.</li>
+                    <li>Extensive utility classes covering layout, spacing, colors, borders, shadows, and much more.</li>
                 </ul>
             </div>
         </div>
